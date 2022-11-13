@@ -1,5 +1,13 @@
 import './globals.css'
 
+import { Space_Grotesk } from '@next/font/google';
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['500', '700'],
+  display: 'swap'
+})
+
 export default function RootLayout({
   children,
 }: {
@@ -7,12 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body className={`${spaceGrotesk.className} bg-deepBlack`}>{children}</body>
     </html>
   )
 }
