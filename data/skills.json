@@ -2,15 +2,15 @@
   "skill": [
     {
       "name": "HTML",
-      "experience": 4
+      "experience": 10
     },
     {
       "name": "CSS",
-      "experience": 4
+      "experience": 10
     },
     {
       "name": "Javascript",
-      "experience": 4
+      "experience": 6
     },
     {
       "name": "Accessibility",
@@ -18,7 +18,7 @@
     },
     {
       "name": "React",
-      "experience": 3
+      "experience": 1
     },
     {
       "name": "SASS",

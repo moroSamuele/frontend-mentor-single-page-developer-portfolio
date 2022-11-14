@@ -3,38 +3,18 @@
     {
       "imageLarge": "/assets/images/thumbnail-project-1-large.webp",
       "imageSmall": "/assets/images/thumbnail-project-1-small.webp",
-      "name": "Design portfolio",
-      "languages": ["HTML", "CSS"]
+      "linkPreview": "https://frontend-mentor-easybank-landing-page-six.vercel.app/",
+      "linkGithub": "https://github.com/moroSamuele/frontend-mentor-easybank-landing-page",
+      "name": "Easybank Landing Page",
+      "languages": ["HTML", "TailwindCSS", "Next.js 13", "Typescript"]
     },
     {
       "imageLarge": "/assets/images/thumbnail-project-2-large.webp",
       "imageSmall": "/assets/images/thumbnail-project-2-small.webp",
-      "name": "E-Learning landing page",
-      "languages": ["HTML", "CSS"]
-    },
-    {
-      "imageLarge": "/assets/images/thumbnail-project-3-large.webp",
-      "imageSmall": "/assets/images/thumbnail-project-3-small.webp",
-      "name": "TODO web app",
-      "languages": ["HTML", "CSS", "Javascript"]
-    },
-    {
-      "imageLarge": "/assets/images/thumbnail-project-4-large.webp",
-      "imageSmall": "/assets/images/thumbnail-project-4-small.webp",
-      "name": "Entertainment web app",
-      "languages": ["HTML", "CSS", "Javascript"]
-    },
-    {
-      "imageLarge": "/assets/images/thumbnail-project-5-large.webp",
-      "imageSmall": "/assets/images/thumbnail-project-5-small.webp",
-      "name": "Memory game",
-      "languages": ["HTML", "CSS", "Javascript"]
-    },
-    {
-      "imageLarge": "/assets/images/thumbnail-project-6-large.webp",
-      "imageSmall": "/assets/images/thumbnail-project-6-small.webp",
-      "name": "Art gallery showcase",
-      "languages": ["HTML", "CSS", "Javascript"]
+      "linkPreview": "https://frontend-mentor-clock-app-topaz.vercel.app/",
+      "linkGithub": "https://github.com/moroSamuele/frontend-mentor-clock-app",
+      "name": "Clock app",
+      "languages": ["HTML", "TailwindCSS", "Next.js"]
     }
   ]
 }

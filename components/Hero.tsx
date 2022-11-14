@@ -1,87 +1,53 @@
-import Image from "next/legacy/image";
-import Link from "next/link";
+import Image from "next/image";
 
 import Button from "./Button";
+import Header from "./Header";
 
-
-const SocialIcon = ({
-  link,
-  image,
-  imageAlt,
-} : {
-  link: string;
-  image: string;
-  imageAlt: string;
-}) => {
-  return (
-    <Link href={link} className="relative w-[25px] aspect-square">
-      <Image
-        src={`/assets/images/${image}`}
-        alt={imageAlt}
-        layout="fill"
-        className="object-contain"
-      />
-    </Link>
-  )
-}
 
 const Hero = () => {
   return (
-    <div className="px-[165px] relative float-left w-full">
-      <header className="relative w-full flex justify-between py-[39px] float-left z-10">
-        <Link href="/" title="adamkeyes" className="lowercase font-white font-[700] text-[32px] leading-[32px] tracking-[-0.44px] text-totalWhite">
-          adamkeyes
-        </Link>
+    <div className="px-[16px] sm:px-[32px] lg:px-[165px] relative float-left w-full">
+      <Header />
 
-        <div className="flex space-x-[32px] mr-[30px]">
-          <SocialIcon
-            link="/"
-            image="icon-github.svg"
-            imageAlt="Visit my work on GitHub"
-          />
-          <SocialIcon
-            link="/"
-            image="icon-frontend-mentor.svg"
-            imageAlt="My concepts at Frontend Mentor"
-          />
-          <SocialIcon
-            link="/"
-            image="icon-linkedin.svg"
-            imageAlt="Visit my Linkedin Page"
-          />
-          <SocialIcon
-            link="/"
-            image="icon-twitter.svg"
-            imageAlt="Twit Twit"
-          />
-        </div>
-      </header>
-
-      <div className="relative w-full float-left mt-[88px] flex flex-col max-w-[706px] justify-start items-start z-10">
-        <h1 className="text-totalWhite text-[88px] leading-[88px] tracking-[-2.5px] font-[700]">
+      <div className="relative w-full float-left pt-[320px] sm:pt-[90px] lg:pt-[88px] flex flex-col sm:max-w-[445px] lg:max-w-[706px] justify-start items-center sm:items-start z-10 text-center sm:text-left">
+        <h1 className="text-totalWhite text-[40px] sm:text-[72px] lg:text-[80px] leading-[40px] sm:leading-[72px] lg:leading-[80px] tracking-[-1.14px] sm:tracking-[-2.05px] lg:tracking-[-2.5px] font-[700]">
           Nice to meet you! I’m&nbsp;
           <span className="relative">
-            <span className="absolute w-full bottom-[5px] h-[6px] bg-goodGreen z-0"></span>
-            <span className="relative z-10">Adam Keyes</span>
+            <span className="heroBorderH1 absolute bottom-0 sm:bottom-[5px] h-[6px] bg-goodGreen z-0"></span>
+            <span className="relative z-10">Samuele Moro</span>
           </span>.
         </h1>
-        <p className="text-[18px] text-notSoDeepBlack font-[500] leading-[28px] mt-[43px] max-w-[445px] mb-[66px]">
-          Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
+        <p className="text-[16px] sm:text-[18px] text-notSoDeepBlack font-[500] leading-[26px] sm:leading-[28px] mt-[20px] sm:mt-[43px] max-w-[445px] mb-[24px] sm:mb-[66px]">
+          Based in Sandrigo (Italy), I’m a full-stack developer passionate making the web a better place.
         </p>
         <Button
-          link="/"
+          link="mailto:moro96.samuele@icloud.com"
           text="Contact me"
         />
       </div>
 
-      <div className="absolute w-[445px] h-[720px] right-[165px] top-0 z-0">
+      <div className="absolute sm:w-[445px] sm:h-[720px] left-1/2 transform -translate-x-1/2 sm:right-0 m-0 sm:translate-x-0 lg:left-[830px] top-0 z-0">
           <Image
             src="/assets/images/image-profile-desktop.webp"
-            alt="Adam Keyes"
+            alt="Samuele Moro"
             layout="fill"
-            className="object-contain"
+            className="profileImageDesktop object-contain hidden lg:block"
           />
-          <div className="absolute -left-[64.5px] bottom-[70px] w-[129px] aspect-square">
+          <Image
+            src="/assets/images/image-profile-tablet.webp"
+            alt="Samuele Moro"
+            width="322"
+            height="600"
+            className="profileImageDesktop hidden sm:block lg:hidden absolute right-[60px]"
+          />
+          <Image
+            src="/assets/images/image-profile-mobile.webp"
+            alt="Samuele Moro"
+            width="174"
+            height="383"
+            className="profileImageDesktop block sm:hidden"
+          />
+          <div className="hidden sm:block absolute sm:right-0 lg:-left-[64.5px] bottom-[122px] lg:bottom-[70px] w-[129px] aspect-square">
             <Image
               src="/assets/images/pattern-circle.svg"
               alt="Circle on profile image"
@@ -89,6 +55,14 @@ const Hero = () => {
               className="object-contain"
             />
           </div>
+        </div>
+        <div className="block sm:hidden absolute -right-[64.5px] top-[255.5px] w-[129px] aspect-square">
+          <Image
+            src="/assets/images/pattern-circle.svg"
+            alt="Circle on profile image"
+            layout="fill"
+            className="object-contain"
+          />
         </div>
     </div>
   )
